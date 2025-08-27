@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF Camisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="wrap">
+    <div>
+        <header>
+            <img src="./imagem/camiseta.jpg" alt="Logo MF Camisas" class="logo">
+
+            <div class="menu">
+                <img src="imagem/menu.png" alt="Menu" class="menu-icon">  
+                
+                <ul class="dropdown">
+                    <li><a href="https://d2r9epyceweg5n.cloudfront.net/stores/001/371/250/rte/tabela-de-tamanhos-ink.jpg" target="_blank"> Medidas</a></li>
+                    <li><a href="mailto:camisas@testemail.com" target="_blank"> Envie sua arte para orçamento</a></li>
+                    <li><a href="mailto:camisas@testemail.com" target="_blank"> Faça seu pedido</a></li>
+                </ul>
+
+            </div>
+        </header>
+    </div>
+
+    <div class="slider">
+        <h1>Nossos trabalhos</h1>
+        <div class="slides">
+            <img src="imagem/Camisa1.webp" alt="Camisa1" class="trabalhos">
+            <img src="imagem/Camisa2.png" alt="Camisa2" class="trabalhos">
+            <img src="imagem/Camisa3.jpg" alt="Camisa3" class="trabalhos">
+            <img src="imagem/Camisa4.jpg" alt="Camisa4" class="trabalhos">
+        </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+<script>
+let index = 0;
+const images = document.querySelectorAll(".slides img");
+const total = images.length;
+const intervalTime = 5000; // 5 segundos
+
+// mostra a imagem correta
+function showImage(i) {
+    images.forEach(img => img.classList.remove("active"));
+    images[i].classList.add("active");
+}
+
+// troca automática
+function autoSlide() {
+    index = (index + 1) % total;
+    showImage(index);
+}
+
+// botões
+document.querySelector(".prev").addEventListener("click", () => {
+    index = (index - 1 + total) % total;
+    showImage(index);
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+    index = (index + 1) % total;
+    showImage(index);
+});
+
+// inicia
+showImage(index);
+setInterval(autoSlide, intervalTime);
+</script>
+
+</body>
+</html>
