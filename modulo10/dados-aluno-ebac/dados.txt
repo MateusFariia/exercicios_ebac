@@ -9,4 +9,4 @@ Dados do aluno
 
 Obrigado!!!
 
-
+(Repositorio clonado e retirado o arquivo .git atraves de "rm -rf dados-aluno-ebac/.git" para que o repositorio fique uma pasta dentro do GitHub e mantenha a estrutura do GitHub)
