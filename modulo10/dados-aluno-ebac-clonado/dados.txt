@@ -1,0 +1,12 @@
+Dados do aluno
+
+-Primeiro Nome: Mateus
+-Profissão: Autonomo
+-Cidade: Itapeva - SP
+-O que faz nas horas vaga: Nas horas vagas gosto de jogar video game, tocar violao e sair com meus amigos
+-Feedback sobre o curso Qualidade de Software: O curso esta sendo otimo, aulas muito bem explicadas, com otimos exemplos, alem de exercicios que realmente nos fazem colocar em pratica o que foi aprendido
+-Feedback sobre a plataforma de estudo da EBAC: A plataforma tem um visual muito bom, alem de ser facil de encontrar os conteudos e nao travar em momento algum
+
+Obrigado!!!
+
+
