@@ -7,10 +7,6 @@ describe('Funcionalidade: Login', () => {
     beforeEach(() => {
         cy.visit('minha-conta/')
     });
-
-    afterEach(() => {
-        cy.screenshot()
-    });
     
     it('Deve realizar o login', () => {
         cy.get('#username').type('mateus.teste@teste.com.br')
@@ -41,13 +37,18 @@ describe('Funcionalidade: Login', () => {
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
     });
 
-    it.only('Deve fazer login - usando fixture', () => {
+    it('Deve fazer login - usando fixture', () => {
         cy.fixture('perfil').then(dados => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha , {log: false})
             cy.get('.woocommerce-form > .button').click()
             cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
         })
+    });
+
+    it.only('Logando com comandos customizados', () => {
+        cy.login('mateus.teste@teste.com.br', 'testeebac123')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
     });
     
 })
