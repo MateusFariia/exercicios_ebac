@@ -1,0 +1,22 @@
+[
+    {
+        "nomeProduto": "Circe Hooded Ice Fleece",
+        "cor": "Purple",
+        "tamanho": "S",
+        "quantidade": 2
+    },
+
+    {
+        "nomeProduto": "Ariel Roll Sleeve Sweatshirt",
+        "cor": "Green",
+        "tamanho": "S",
+        "quantidade": 1
+    },
+
+    {
+        "nomeProduto": "Apollo Running Short",
+        "cor": "Black",
+        "tamanho": "33",
+        "quantidade": 1
+    }
+]
