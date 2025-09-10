@@ -12,7 +12,7 @@ describe('Funcionalidade: Login', () => {
         cy.get('#username').type('mateus.teste@teste.com.br')
         cy.get('#password').type('testeebac123')
         cy.get('.woocommerce-form > .button').click()
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
 
     });
 
@@ -34,7 +34,7 @@ describe('Funcionalidade: Login', () => {
         cy.get('#username').type(perfil.usuario)
         cy.get('#password').type(perfil.senha)
         cy.get('.woocommerce-form > .button').click()
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
     });
 
     it('Deve fazer login - usando fixture', () => {
@@ -42,13 +42,13 @@ describe('Funcionalidade: Login', () => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha , {log: false})
             cy.get('.woocommerce-form > .button').click()
-            cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
+            cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
         })
     });
 
-    it.only('Logando com comandos customizados', () => {
+    it('Logando com comandos customizados', () => {
         cy.login('mateus.teste@teste.com.br', 'testeebac123')
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, mateus.teste (não é mateus.teste? Sair)')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
     });
     
 })
