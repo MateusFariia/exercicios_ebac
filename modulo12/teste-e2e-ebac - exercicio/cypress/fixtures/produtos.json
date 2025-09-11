@@ -1,0 +1,30 @@
+[
+    {
+        "nomeProduto": "Circe Hooded Ice Fleece",
+        "cor": "Purple",
+        "tamanho": "S",
+        "quantidade": 1
+    },
+
+    {
+        "nomeProduto": "Ariel Roll Sleeve Sweatshirt",
+        "cor": "Green",
+        "tamanho": "L",
+        "quantidade": 1
+    },
+
+    {
+        "nomeProduto": "Aether Gym Pant",
+        "cor": "Blue",
+        "tamanho": "33",
+        "quantidade": 1
+    },
+
+    {
+        "nomeProduto": "Atlas Fitness Tank",
+        "cor": "Blue",
+        "tamanho": "S",
+        "quantidade": 1
+    }
+    
+]
