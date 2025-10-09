@@ -46,9 +46,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('#billing_phone').clear().type(faker.number.int('#########'))
     cy.get('#terms').click()
     cy.get('#place_order').click()
-    cy.wait(2000)
-    cy.get('.woocommerce-notice').should('exist')
+    cy.get('.woocommerce-notice',{timeout:2000}).should('exist')
     });
-
 
 })
