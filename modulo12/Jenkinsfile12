@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Setup') {
+            steps {
+                git branch: 'main', url: 'https://github.com/MateusFariia/exercicios_ebac.git'
+                dir('modulo12'){
+                    bat 'npm install'
+                    bat 'npx cypress install'
+                    bat 'start cmd /C "set NO_COLOR=1 && npx serverest"'
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                dir('modulo12'){
+                    bat '''set NO_COLOR=1
+                    npm test'''
+                }
+            }
+        }
+    }
+}
