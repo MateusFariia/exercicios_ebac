@@ -139,5 +139,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Mobile App Binaries
-app/*.apk
-*.apk
+app/
+
+chromedriver-mobile
