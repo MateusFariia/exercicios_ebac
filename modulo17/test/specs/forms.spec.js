@@ -18,7 +18,7 @@ describe('Funcionalidade: Tela de formulario', () => {
         await driver.pause(5000)
     });
 
-    it.only('Deve trocar o botão de ON para OFF', async () => {
+    it('Deve trocar o botão de ON para OFF', async () => {
         //Trocar para ON
         const botaoOnOff = await driver.$("accessibility id:switch");
         await botaoOnOff.click();
