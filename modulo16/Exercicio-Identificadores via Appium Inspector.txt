@@ -1,0 +1,19 @@
+Fluxo para criação de cadastro na plataforma EBAC Shop:
+
+Elemento (Botão): "Profile"; Identificador: accessibility id = ", Profile"
+
+Elemento (Botão): "Sign Up"; Identificador: text = "Sign up"
+
+Elemento (Caixa de Texto): "First Name"; Identificador: id = "firstName"
+
+Elemento (Caixa de Texto): "Last Name"; Identificador: id = "lastName"
+
+Elemento (Caixa de Texto): "Phone Number"; Identificador: id = "phone"
+
+Elemento (Caixa de Texto): "Email Adress"; Identificador: id = "email"
+
+Elemento (Caixa de Texto): "Password"; Identificador: id = "password"
+
+Elemento (Caixa de Texto): "Re-enter Password"; Identificador: id = "repassword"
+
+Elemento (Botão): "Create"; Identificador: accessibility id = "Create"
