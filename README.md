@@ -30,7 +30,7 @@ Os testes foram elaborados considerando:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🧮 Tecnologias Utilizadas
 
 - JavaScript
 - Cypress
