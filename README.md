@@ -1,4 +1,4 @@
-# 🧪 Exercícios EBAC - QA (Testes Manuais e Automatizados)
+# Exercícios EBAC - QA (Testes Manuais e Automatizados)
 
 Repositório com exercícios práticos desenvolvidos durante o curso de Engenharia de Qualidade de Software (EBAC), com foco em testes manuais e automação de testes utilizando Cypress.
 
