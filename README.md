@@ -1,18 +1,32 @@
 # Exercícios EBAC - QA (Testes Manuais e Automatizados)
 
-Repositório com exercícios práticos desenvolvidos durante o curso de Engenharia de Qualidade de Software (EBAC), com foco em testes manuais e automação de testes utilizando Cypress.
+Repositório com exercícios práticos desenvolvidos durante o curso de Engenharia de Qualidade de Software (EBAC), com foco em testes manuais e automação de testes E2E utilizando Cypress.
+
+Este projeto simula cenários reais de validação de aplicações web, com foco em qualidade, comportamento do sistema e experiência do usuário.
 
 ---
 
 ## 🎯 Objetivo
 
-Praticar e consolidar conhecimentos em:
+Aplicar na prática conceitos de QA, incluindo:
 
-- Criação de cenários de teste
-- Execução de testes manuais
-- Automação de testes E2E
+- Criação de cenários de teste baseados em regras de negócio
+- Execução de testes manuais e automatizados
+- Validação de fluxos críticos de aplicações web
+- Identificação e documentação de falhas (bugs)
+- Garantia da qualidade e confiabilidade do sistema
+
+---
+
+## 🧠 Estratégia de Testes
+
+Os testes foram elaborados considerando:
+
+- Fluxos críticos da aplicação (ex: autenticação e navegação)
+- Testes positivos (comportamento esperado)
+- Testes negativos (validação de erros e exceções)
 - Validação de regras de negócio
-- Identificação e documentação de bugs
+- Simulação do comportamento real do usuário
 
 ---
 
@@ -20,25 +34,44 @@ Praticar e consolidar conhecimentos em:
 
 - JavaScript
 - Cypress
+- Appium
 - Node.js
 
 ---
 
-## 🧪 Cenários de Teste
+## 🧪 Cenários de Teste Cobertos
 
-- Login com credenciais válidas e inválidas
-- Validação de mensagens de erro
-- Fluxo de cadastro de usuário
-- Navegação entre páginas
-- Validação de elementos na interface
+### 🔐 Autenticação (Login)
+
+- Login com credenciais válidas
+- Login com senha incorreta
+- Login com campos vazios
+- Validação de mensagens de erro para cada cenário
+- Verificação de redirecionamento após login
+
+---
+
+### 🧭 Navegação
+
+- Acesso a páginas após autenticação
+- Validação de elementos obrigatórios na interface
+- Verificação de comportamento de botões e links
+
+---
+
+### 📋 Validações de Interface
+
+- Campos obrigatórios
+- Estados de botões (ativo/inativo)
+- Mensagens exibidas ao usuário
 
 ---
 
 ## 🐞 Bugs Identificados
 
-Durante os testes, foram identificados cenários como:
+Durante a execução dos testes, foram observados possíveis comportamentos inconsistentes:
 
-- Mensagens de erro inconsistentes
-- Falta de validação em campos obrigatórios
-- Elementos interativos ativos sem validação prévia
-- Possíveis falhas de navegação entre páginas
+- Sistema permite tentativa de login com campos vazios
+- Mensagens de erro não correspondem corretamente ao cenário apresentado
+- Botão de login ativo mesmo sem preenchimento dos campos obrigatórios
+- Falhas na validação de navegação após login
