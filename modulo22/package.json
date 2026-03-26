@@ -1,0 +1,17 @@
+{
+  "name": "cy-pageobjects",
+  "version": "1.0.0",
+  "description": "Exercicio módulo 22",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "mateusfariia",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^15.13.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0"
+  }
+}
