@@ -8,5 +8,5 @@ describe('Testes de unidade para a função soma', () => {
     it('Deve validar que o número obtido é positivo', () => {
         expect(soma).toBeGreaterThan(0);
     });
-    
+
 });
